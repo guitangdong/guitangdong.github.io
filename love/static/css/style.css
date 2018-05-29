@@ -188,7 +188,7 @@ body{
 	margin-bottom:80px;
 }
 .love-oath .issue-an-oath .caption{
-	padding-top: 150px;
+	padding-top: 220px;
 }
 
 .issue-an-oath .thumbnail{
@@ -202,18 +202,28 @@ body{
      color: #FFFFFF;
 }
 .con4 .btn{
-     width:220px;
-     height:220px;
-     line-height: 220px;
-     text-align: center;
-     background-color: rgba(0,0,0,0.2);
-     display: block;
-     font-size: 16px;
-     border-radius:50%;
-     position:absolute;
-     top:4px;
-     left:4px;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #999;
+    display: block;
+    font-size: 16px;
+    border-radius: 5px;
+    position: absolute;
+    top: 276px;
+    left: 50%;
+    margin-left: -80px;
+    -moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
      
+}
+.con4 .btn:hover{
+	background:#fbaea6;
+	-moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
 }
 .upload{
      float: left;
@@ -221,14 +231,19 @@ body{
 }
 .upload_pic{
      display: block;
-     width: 220px;
-     height:220px;
+     width: 160px;
+     height: 40px;
      position: absolute;
      left: 0;
      top: 0;
      opacity: 0;
      border-radius: 50%;
      cursor:pointer;
+}
+.issue-an-oath .thumbnail .prompt{
+	color: #999;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 #cvs{
 	background:url(../img/upload.png) no-repeat;
@@ -302,7 +317,30 @@ body{
 }
 
 /*/issue-an-oath*/
-
+@media screen and (max-width: 1370px){
+	.love-oath .banner{
+		height:700px;
+	}
+	.love-oath .banner-icon01{
+		width:300px;
+	    top: 186px;
+	    margin-left:-150px;
+	}
+	.love-oath .banner-icon02{
+		width:410px;
+	    top: 100px;
+	    margin-left:-200px;
+	}
+	
+	.love-oath .banner-icon03{
+		width:1200px;
+	    top: 30px;
+	    margin-left:-600px;
+	}
+	.love-oath .banner .btn{
+	    top:580px;
+	}
+}
 
 @media screen and (max-width: 1100px){
 	.love-oath .row{
@@ -446,15 +484,15 @@ body{
 		top:120px
 	}
 	
-	.issue-an-oath .upload{
-		width:160px;
-		height:160px;
-		line-height:160px;
-	}
+	
 	.issue-an-oath .imageFileInput{
 	    width: 160px;
 	    height: 160px;
 	   
+	}
+	.love-oath .thumbnail{
+		margin-left: -84px;
+		top:10px;
 	}
 	.issue-an-oath .thumbnail{
 		margin-left: -89px;
@@ -470,10 +508,34 @@ body{
 		margin-top: 90px;
 		padding-top:100px;
 	}
+	.love-oath .row .caption{
+		margin-top: 100px
+	}
+	
+	.love-oath .my-oath .caption{
+		padding-top:90px;
+	}
+	.love-oath .thumbnail img{
+		width:160px;
+		height:160px;
+	}
 	#cvs{
 	     width: 160px;
 	     height:160px;
 	     background-size:cover;
+	}
+	
+	.con4 .btn{
+		top:210px
+	}
+	.issue-an-oath .thumbnail .prompt{
+		position: absolute;
+    	width: 210px;
+    	left: 50%;
+    	margin-left:-105px;
+	}
+	.love-oath .issue-an-oath .caption{
+		padding-top:190px;
 	}
 }
 
@@ -514,20 +576,7 @@ body{
 	.love-oath .banner .btn .btn-right{
     	margin-left: 20px;
 	}
-	.love-oath .row .caption{
-		margin-top: 100px
-	}
-	.love-oath .thumbnail{
-		margin-left: -84px;
-		top:10px;
-	}
-	.love-oath .thumbnail img{
-		width:160px;
-		height:160px;
-	}
-	.love-oath .my-oath .caption{
-		padding-top:110px;
-	}
+	
 	
 	.love-oath .row .list{
 		margin-bottom:30px;
