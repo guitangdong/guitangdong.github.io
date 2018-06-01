@@ -3,7 +3,7 @@
 	padding:0px;
 }
 li{
-	
+
 }
 a{
 	text-decoration:none;
@@ -160,7 +160,7 @@ body{
 	margin-bottom:40px;
 }
 .my-oath .thumbnail{
- top:30px;	
+ top:30px;
 }
 .love-oath .my-oath h3{
 	color:#333;
@@ -217,7 +217,7 @@ body{
     -moz-transition: all 0.2s;
 	-webkit-transition: all 0.2s;
 	-o-transition: all 0.2s;
-     
+
 }
 .con4 .btn:hover{
 	background:#fbaea6;
@@ -331,7 +331,7 @@ body{
 	    top: 100px;
 	    margin-left:-200px;
 	}
-	
+
 	.love-oath .banner-icon03{
 		width:1200px;
 	    top: 30px;
@@ -369,7 +369,7 @@ body{
 	    left:50%;
 	    margin-left:-180px;
 	}
-	
+
 	.love-oath .banner-icon03{
 		width:1200px;
 	    top: 30px;
@@ -387,7 +387,7 @@ body{
 	}
 	.layer{
 		transform:none !important;
-		
+
 	}
 	.love-oath .banner-icon01{
 		width:160px;
@@ -401,7 +401,7 @@ body{
 	    left:50%;
 	    margin-left:-110px;
 	}
-	
+
 	.love-oath .banner-icon03{
 		width:900px;
 	    top: 30px;
@@ -438,7 +438,7 @@ body{
 		display:initial;
 		margin-left:0px;
 	}
-	
+
 }
 
 @media screen and (max-width: 500px){
@@ -457,7 +457,7 @@ body{
 	    left:50%;
 	    margin-left:-85px;
 	}
-	
+
 	.love-oath .banner-icon03{
 		width:800px;
 	    top: 30px;
@@ -483,12 +483,12 @@ body{
 	.love-oath .my-oath .comma_top{
 		top:120px
 	}
-	
-	
+
+
 	.issue-an-oath .imageFileInput{
 	    width: 160px;
 	    height: 160px;
-	   
+
 	}
 	.love-oath .thumbnail{
 		margin-left: -84px;
@@ -498,11 +498,11 @@ body{
 		margin-left: -89px;
 		top:70px;
 	}
-	
+
 	.issue-an-oath .fileInput{
 	    width: 160px;
 	    height: 160px;
-	    
+
 	}
 	.love-oath .issue-an-oath .caption{
 		margin-top: 90px;
@@ -511,7 +511,7 @@ body{
 	.love-oath .row .caption{
 		margin-top: 100px
 	}
-	
+
 	.love-oath .my-oath .caption{
 		padding-top:90px;
 	}
@@ -524,7 +524,7 @@ body{
 	     height:160px;
 	     background-size:cover;
 	}
-	
+
 	.con4 .btn{
 		top:210px
 	}
@@ -576,12 +576,12 @@ body{
 	.love-oath .banner .btn .btn-right{
     	margin-left: 20px;
 	}
-	
-	
+
+
 	.love-oath .row .list{
 		margin-bottom:30px;
 	}
-	
+
 	.love-oath .issue-an-oath .caption{
 		margin-top: 90px;
 	}
