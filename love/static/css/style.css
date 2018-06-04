@@ -3,7 +3,7 @@
 	padding:0px;
 }
 li{
-
+	list-style:none;
 }
 a{
 	text-decoration:none;
@@ -17,6 +17,8 @@ body{
 .layer{
 	width:100%;
 }
+
+/*banner*/
 .love-oath .banner{
 	background:#fbaea6;
 	width:100%;
@@ -26,14 +28,14 @@ body{
 }
 .love-oath .banner-icon01{
     position: absolute;
-    top: 204px;
+    top: 190px;
     left: 50%;
     margin-left:-188px;
 }
 .love-oath .banner-icon02{
     position: absolute;
     text-align: justify;
-    top: 100px;
+    top: 86px;
     left:50%;
     margin-left:-253px;
 }
@@ -41,7 +43,7 @@ body{
 .love-oath .banner-icon03{
 	position: absolute;
     text-align: justify;
-    top: 30px;
+    top: 10px;
     left:50%;
     margin-left:-642px;
 }
@@ -50,7 +52,7 @@ body{
 	position: absolute;
     text-align: justify;
     left:50%;
-    top:680px;
+    top:660px;
     margin-left:-200px;
 }
 .love-oath .banner .btn a{
@@ -151,8 +153,159 @@ body{
 	right:30px;
 	bottom:16px;
 }
+.slider-pagi {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 1.2rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 0;
+  list-style-type: none;
+}
+.slider-pagi__elem {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 1rem;
+  height: 1rem;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+.slider-pagi__elem:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0.7rem;
+  height: 0.7rem;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+}
+.slider-pagi__elem.active:before, .slider-pagi__elem:hover:before {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
 
+.slider {
+  z-index: 1;
+  position: relative;
+  height: 100%;
+}
+.slider.animating {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  will-change: transform;
+}
+.slider.animating .slide__bg {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  will-change: transform;
+}
 
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.slide.active .slide__overlay,
+.slide.active .slide__text {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+.slide__bg {
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  will-change: transform;
+}
+.slide:nth-child(1) {
+  left: 0;
+}
+.slide:nth-child(1) .slide__bg {
+  left: 0;
+ 
+}
+.slide:nth-child(2) {
+  left: 100%;
+}
+.slide:nth-child(2) .slide__bg {
+  left: -50%;
+  
+}
+.love-oath .banner-icon04{
+	position:absolute;
+	width: 715px;
+    top:50%;
+    left:50%;
+    margin-left:-354px;
+    margin-top:-180px;
+}
+.love-oath .banner-icon05,.love-oath .banner-icon06{
+	display:none;
+}
+.help{
+	position:absolute;
+	top:0px;
+	right:0px;
+	z-index:9999;
+	height: 40px;
+	width:60px;
+}
+.help:hover ul{
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	opacity:1;
+}
+.help p {
+	text-align:right;
+	cursor: pointer;
+	padding:16px 16px 16px 0px;
+}
+.help p img{
+	width:15px;
+	
+}
+.help ul{
+	position:absolute;
+	width:146px;
+	left: -136px;
+    top: 54px;
+    opacity:0;
+	background:#fff;
+	padding:20px;
+	border-radius:5px;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+}
+.help ul a{
+	color:#666;
+	display:block;
+	padding:4px 0px;
+}
+/*/banner*/
 
 /*my-oath*/
 .love-oath .my-oath .list{
@@ -160,7 +313,7 @@ body{
 	margin-bottom:40px;
 }
 .my-oath .thumbnail{
- top:30px;
+ top:30px;	
 }
 .love-oath .my-oath h3{
 	color:#333;
@@ -217,7 +370,7 @@ body{
     -moz-transition: all 0.2s;
 	-webkit-transition: all 0.2s;
 	-o-transition: all 0.2s;
-
+     
 }
 .con4 .btn:hover{
 	background:#fbaea6;
@@ -315,6 +468,37 @@ body{
 	background:#fbaea6;
 	margin-left:30px;
 }
+/*loaders*/
+.loaders{
+	background:#fbaea6;
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0px;
+	left:0px;
+}
+.loaders .loader{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-42px;
+	margin-left:-200px;
+	
+}
+.loaders .loader-inner{
+	width:60px;
+	margin:0px auto;
+	left:30px;
+}
+.loaders .loader p{
+	text-align:center;
+	padding-top:50px;
+}
+.loaders .loader p img{
+	width:400px;
+}
+/*/loaders*/
+
 
 /*/issue-an-oath*/
 @media screen and (max-width: 1370px){
@@ -323,22 +507,22 @@ body{
 	}
 	.love-oath .banner-icon01{
 		width:300px;
-	    top: 186px;
+	    top: 144px;
 	    margin-left:-150px;
 	}
 	.love-oath .banner-icon02{
 		width:410px;
-	    top: 100px;
+	    top: 60px;
 	    margin-left:-200px;
 	}
-
+	
 	.love-oath .banner-icon03{
 		width:1200px;
 	    top: 30px;
 	    margin-left:-600px;
 	}
 	.love-oath .banner .btn{
-	    top:580px;
+	    top:540px;
 	}
 }
 
@@ -359,17 +543,17 @@ body{
 	}
 	.love-oath .banner-icon01{
 		width:260px;
-	    top: 140px;
+	    top: 125px;
 	    left: 50%;
 	    margin-left:-130px;
 	}
 	.love-oath .banner-icon02{
 		width:360px;
-	    top: 60px;
+	    top: 50px;
 	    left:50%;
 	    margin-left:-180px;
 	}
-
+	
 	.love-oath .banner-icon03{
 		width:1200px;
 	    top: 30px;
@@ -377,7 +561,7 @@ body{
 	    margin-left:-600px;
 	}
 	.love-oath .banner .btn{
-	    top:480px;
+	    top:460px;
 	}
 }
 
@@ -387,21 +571,21 @@ body{
 	}
 	.layer{
 		transform:none !important;
-
+		
 	}
 	.love-oath .banner-icon01{
 		width:160px;
-	    top: 95px;
+	    top: 76px;
 	    left: 50%;
 	    margin-left:-80px;
 	}
 	.love-oath .banner-icon02{
 		width:220px;
-	    top: 50px;
+	    top: 30px;
 	    left:50%;
 	    margin-left:-110px;
 	}
-
+	
 	.love-oath .banner-icon03{
 		width:900px;
 	    top: 30px;
@@ -411,7 +595,7 @@ body{
 	.love-oath .banner .btn{
 	    width:310px;
 	    left:50%;
-	    top:315px;
+	    top:290px;
 	    margin-left:-155px;
 	}
 	.love-oath .banner .btn a{
@@ -438,8 +622,27 @@ body{
 		display:initial;
 		margin-left:0px;
 	}
-
+	.love-oath .banner-icon04{
+		position:absolute;
+		width: 600px;
+	    top: 50%;
+	    left:50%;
+	    margin-left:-300px;
+	    margin-top:-140px;
+	}
 }
+
+@media screen and (max-width: 660px){
+	.love-oath .banner-icon04{
+		display:none;
+	}
+	.love-oath .banner-icon05{
+		display:block;
+		width:428px;
+		margin-left:-218px;
+	}
+}
+
 
 @media screen and (max-width: 500px){
 	.love-oath .banner{
@@ -447,17 +650,17 @@ body{
 	}
 	.love-oath .banner-icon01{
 		width:120px;
-	    top: 80px;
+	    top: 58px;
 	    left: 50%;
 	    margin-left:-60px;
 	}
 	.love-oath .banner-icon02{
 		width:170px;
-	    top: 40px;
+	    top: 20px;
 	    left:50%;
 	    margin-left:-85px;
 	}
-
+	
 	.love-oath .banner-icon03{
 		width:800px;
 	    top: 30px;
@@ -467,7 +670,7 @@ body{
 	.love-oath .banner .btn{
 	    width:310px;
 	    left:50%;
-	    top:242px;
+	    top:220px;
 	    margin-left:-155px;
 	}
 	.love-oath .banner .btn a{
@@ -483,12 +686,12 @@ body{
 	.love-oath .my-oath .comma_top{
 		top:120px
 	}
-
-
+	
+	
 	.issue-an-oath .imageFileInput{
 	    width: 160px;
 	    height: 160px;
-
+	   
 	}
 	.love-oath .thumbnail{
 		margin-left: -84px;
@@ -498,11 +701,11 @@ body{
 		margin-left: -89px;
 		top:70px;
 	}
-
+	
 	.issue-an-oath .fileInput{
 	    width: 160px;
 	    height: 160px;
-
+	    
 	}
 	.love-oath .issue-an-oath .caption{
 		margin-top: 90px;
@@ -511,7 +714,7 @@ body{
 	.love-oath .row .caption{
 		margin-top: 100px
 	}
-
+	
 	.love-oath .my-oath .caption{
 		padding-top:90px;
 	}
@@ -524,7 +727,7 @@ body{
 	     height:160px;
 	     background-size:cover;
 	}
-
+	
 	.con4 .btn{
 		top:210px
 	}
@@ -537,6 +740,35 @@ body{
 	.love-oath .issue-an-oath .caption{
 		padding-top:190px;
 	}
+	.love-oath .banner-icon05{
+		display:none;
+	}
+	.love-oath .banner-icon06{
+		display:block;
+		width:316px;
+		margin-left:-158px;
+	}
+	.help{
+		width: 40px;
+	}
+	.help p {
+		text-align:right;
+		cursor: pointer;
+		padding:10px 10px 16px 0px;
+	}
+	.help p img{
+		width: 12px;
+	}
+	.help ul{
+		width:126px;
+		top: 40px;
+		left: -120px;
+		padding:15px
+	}
+	.help ul a{
+		font-size:14px;
+		padding:2px 0px;
+	}
 }
 
 @media screen and (max-width: 420px){
@@ -545,26 +777,26 @@ body{
 	}
 	.love-oath .banner-icon01{
 		width:120px;
-	    top: 70px;
+	    top: 54px;
 	    left: 50%;
 	    margin-left:-60px;
 	}
 	.love-oath .banner-icon02{
 		width:170px;
-	    top: 30px;
+	    top: 14px;
 	    left:50%;
 	    margin-left:-85px;
 	}
 	.love-oath .banner-icon03{
 		width:500px;
-	    top: 30px;
+	    top: 10px;
 	    left:50%;
 	    margin-left:-250px;
 	}
 	.love-oath .banner .btn{
 	    width:250px;
 	    left:50%;
-	    top:230px;
+	    top:200px;
 	    margin-left:-125px;
 	}
 	.love-oath .banner .btn a{
@@ -576,14 +808,33 @@ body{
 	.love-oath .banner .btn .btn-right{
     	margin-left: 20px;
 	}
-
-
+	
+	
 	.love-oath .row .list{
 		margin-bottom:30px;
 	}
-
+	
 	.love-oath .issue-an-oath .caption{
 		margin-top: 90px;
+	}
+	.loaders .loader{
+		margin-top:-42px;
+		margin-left:-180px;
+		
+	}
+	.loaders .loader p img{
+		width:360px;
+	}
+}
+
+@media screen and (max-width: 380px){
+	.loaders .loader{
+		margin-top:-42px;
+		margin-left:-150px;
+		
+	}
+	.loaders .loader p img{
+		width:300px;
 	}
 }
 
