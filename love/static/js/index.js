@@ -135,3 +135,33 @@ $(document).ready(function() {
   });
   
 });
+
+
+
+/**/
+(function(){
+	autoHeight();
+	
+})();
+
+function autoHeight(){
+	var editableBoxTimer;
+	$('.row_box').each(function(){
+		maxHeight($(this));
+	});
+	
+}
+
+function maxHeight(obj){
+	var maxHeight = 0;
+	obj.children('.list').each(function(){
+		var formHeight = $(this).find('.caption').height();
+		if(formHeight>maxHeight){
+			maxHeight = formHeight
+		}
+	});
+	obj.find('.caption').height(maxHeight);
+}
+
+
+
